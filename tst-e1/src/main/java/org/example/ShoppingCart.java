@@ -35,5 +35,9 @@ public class ShoppingCart {
         
     }
 
+    public void removeItem(Item itemToRemove) {
+       
+    }
+
     
 }

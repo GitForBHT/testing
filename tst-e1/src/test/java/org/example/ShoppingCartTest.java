@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 
 
 
+
+
  class ShoppingCartTest {
 
     @Test
@@ -66,5 +68,22 @@ import org.junit.jupiter.api.Test;
         // Assert
         assertEquals(2, appleCount, "Es sollten genau 2 Äpfel im Korb sein");
     }
-    
+
+    @Test
+    void testRemoveItem() {
+        // Arrange
+        ShoppingCart cart = new ShoppingCart();
+        Item apple = new Item(50);
+        Item banana = new Item(30);
+        
+        cart.addItem(apple);
+        cart.addItem(banana);
+        
+        // Act: Wir entfernen den Apfel wieder
+        cart.removeItem(apple);
+        
+        // Assert: Jetzt darf nur noch die Banane berechnet werden
+        assertEquals(30, cart.getTotal(), "Nach dem Entfernen des Apfels sollte die Summe 30 sein");
+        assertEquals(0, cart.getQuantity(apple), "Die Anzahl der Äpfel sollte jetzt 0 sein");
+    }   
 }
