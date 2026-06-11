@@ -22,5 +22,10 @@ public class ShoppingCart {
         items.add(item);
     }
 
+    public int getQuantity(Item itemToCount) {
+        
+        return 0;
+    }
+
     
 }

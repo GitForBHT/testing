@@ -50,6 +50,23 @@ import main.java.org.example.ShoppingCart;
         assertEquals(80, total, "Die Summe aus 50 und 30 Cent sollte 80 Cent sein");
     }
 
-    
+    @Test
+    void testGetQuantityOfItem() {
+        // Arrange
+        ShoppingCart cart = new ShoppingCart();
+        Item apple = new Item(50);
+        Item banana = new Item(30);
+        
+        
+        cart.addItem(apple);
+        cart.addItem(apple);
+        cart.addItem(banana);
+        
+        // Act
+        int appleCount = cart.getQuantity(apple);
+        
+        // Assert
+        assertEquals(2, appleCount, "Es sollten genau 2 Äpfel im Korb sein");
+    }
     
 }
