@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.example.ShoppingCartTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.067 s <<< FAILURE! - in org.example.ShoppingCartTest
+testEmptyCartHasZeroTotal  Time elapsed: 0.044 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Ein leerer Warenkorb sollte 0 als Summe haben ==> expected: <0> but was: <-1>
+	at org.example.ShoppingCartTest.testEmptyCartHasZeroTotal(ShoppingCartTest.java:18)
+
