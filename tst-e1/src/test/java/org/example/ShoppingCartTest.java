@@ -1,11 +1,9 @@
 package org.example;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import org.example.Item;
 import org.junit.jupiter.api.Test;
 
-import main.java.org.example.ShoppingCart;
+
 
 
  class ShoppingCartTest {

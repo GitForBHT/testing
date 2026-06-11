@@ -24,7 +24,15 @@ public class ShoppingCart {
 
     public int getQuantity(Item itemToCount) {
         
-        return 0;
+        int count = 0;
+        
+        for (Item currentItem : items) {
+            if (currentItem.equals(itemToCount)) {
+                count++;
+            }
+        }
+        return count;
+        
     }
 
     
