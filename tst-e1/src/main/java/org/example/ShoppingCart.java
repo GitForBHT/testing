@@ -36,7 +36,7 @@ public class ShoppingCart {
     }
 
     public void removeItem(Item itemToRemove) {
-       
+       items.remove(itemToRemove);
     }
 
     
