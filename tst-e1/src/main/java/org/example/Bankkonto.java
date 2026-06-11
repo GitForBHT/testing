@@ -1,3 +1,4 @@
+package org.example;
 public class Bankkonto {
 
     private double kontostand;
