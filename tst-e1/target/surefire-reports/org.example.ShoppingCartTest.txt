@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.example.ShoppingCartTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in org.example.ShoppingCartTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.064 s <<< FAILURE! - in org.example.ShoppingCartTest
+testAddItemIncreasesTotal  Time elapsed: 0.041 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Nach dem Hinzufügen eines Artikels mit Preis 50 sollte die Summe 50 sein ==> expected: <50> but was: <0>
+	at org.example.ShoppingCartTest.testAddItemIncreasesTotal(ShoppingCartTest.java:32)
+
