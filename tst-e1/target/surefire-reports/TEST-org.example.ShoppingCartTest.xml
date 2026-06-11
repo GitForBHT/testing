@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.ShoppingCartTest" time="0.067" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.ShoppingCartTest" time="0.054" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="DE"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.5.8-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\ashnf\AppData\Local\Temp\surefire10481649451347219823\surefirebooter3852994985855625281.jar C:\Users\ashnf\AppData\Local\Temp\surefire10481649451347219823 2026-06-11T21-25-19_015-jvmRun1 surefire8981757313413029932tmp surefire_06617005605766370525tmp"/>
+    <property name="sun.java.command" value="C:\Users\ashnf\AppData\Local\Temp\surefire14310634836039535365\surefirebooter14699401169557886441.jar C:\Users\ashnf\AppData\Local\Temp\surefire14310634836039535365 2026-06-11T21-33-05_153-jvmRun1 surefire282875869405127465tmp surefire_04919489450436281004tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="org.example.ShoppingCartTest"/>
     <property name="surefire.test.class.path" value="C:\Users\ashnf\Documents\GitHub\testing\tst-e1\target\test-classes;C:\Users\ashnf\Documents\GitHub\testing\tst-e1\target\classes;C:\Users\ashnf\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\ashnf\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ashnf\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\ashnf\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ashnf\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\ashnf\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ashnf\AppData\Local\Temp\surefire10481649451347219823\surefirebooter3852994985855625281.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ashnf\AppData\Local\Temp\surefire14310634836039535365\surefirebooter14699401169557886441.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.5+8"/>
@@ -59,9 +59,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testEmptyCartHasZeroTotal" classname="org.example.ShoppingCartTest" time="0.044">
-    <failure message="Ein leerer Warenkorb sollte 0 als Summe haben ==&gt; expected: &lt;0&gt; but was: &lt;-1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Ein leerer Warenkorb sollte 0 als Summe haben ==> expected: <0> but was: <-1>
-	at org.example.ShoppingCartTest.testEmptyCartHasZeroTotal(ShoppingCartTest.java:18)
-]]></failure>
-  </testcase>
+  <testcase name="testEmptyCartHasZeroTotal" classname="org.example.ShoppingCartTest" time="0.03"/>
 </testsuite>
