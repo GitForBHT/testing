@@ -34,6 +34,16 @@ class BankkontoTest {
         assertEquals("Nicht genügend Guthaben.", fehler.getMessage());
     }
 
-
+     @Test
+    void testAbheben_ExakterBetragLeertKonto() {
+        // Arrange
+        Bankkonto konto = new Bankkonto(50.0);
+        
+        
+        konto.abheben(50.0);
+        
+        // Assert
+        assertEquals(0.0, konto.getKontostand(), 0.001);
+    }
     
 }

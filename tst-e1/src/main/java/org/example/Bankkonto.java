@@ -1,4 +1,7 @@
 package org.example;
+
+
+
 public class Bankkonto {
 
     private double kontostand;
@@ -26,10 +29,11 @@ public class Bankkonto {
         if (betrag <= 0) {
             throw new IllegalArgumentException("Betrag muss größer als 0 sein.");
         }
-        // Hier provozieren wir die Exception für deinen Test!
+        
         if (betrag > this.kontostand) {
             throw new IllegalArgumentException("Nicht genügend Guthaben.");
         }
         this.kontostand -= betrag;
     }
+
 }
